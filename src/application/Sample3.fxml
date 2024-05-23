@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fx:controller="application.RepairRequestController"
+     xmlns:fx="http://javafx.com/fxml" alignment="CENTER" spacing="10">
+    
+    <TextField fx:id="carIdField" promptText="Car ID"/>
+    <TextArea fx:id="descriptionArea" promptText="Description"/>
+    
+    <Button text="Submit" onAction="#submitRequest"/>
+    <Button text="Update Status" onAction="#updateStatus"/>
+    <Button text="Delete Request" onAction="#deleteRequest"/>
+    <Button text="Update Request" onAction="#updateRequest"/>
+    
+    <TableView fx:id="repairRequestsTable">
+        <columns>
+            <TableColumn fx:id="makeColumn" text="Make" />
+            <TableColumn fx:id="modelColumn" text="Model" />
+            <TableColumn fx:id="descriptionColumn" text="Description" />
+            <TableColumn fx:id="statusColumn" text="Status" />
+        </columns>
+    </TableView>
+</VBox>

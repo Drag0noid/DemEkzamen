@@ -1,0 +1,40 @@
+package models;
+
+public class Car {
+    private int id;
+    private int clientId;
+    private String make;
+    private String model;
+    
+	public int getId() {
+		return id;
+	}
+	
+	public void setId(int id) {
+		this.id = id;
+	}
+	
+	public int getClientId() {
+		return clientId;
+	}
+	
+	public void setClientId(int clientId) {
+		this.clientId = clientId;
+	}
+	
+	public String getMake() {
+		return make;
+	}
+	
+	public void setMake(String make) {
+		this.make = make;
+	}
+	
+	public String getModel() {
+		return model;
+	}
+	
+	public void setModel(String model) {
+		this.model = model;
+	} 
+}
